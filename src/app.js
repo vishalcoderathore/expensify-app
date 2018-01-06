@@ -14,26 +14,6 @@ import 'react-dates/lib/css/_datepicker.css';
 //Create Store
 const store = configureStore();
 
-//Add Expenses
-const expenseOne = store.dispatch(addExpense({
-    description: 'Water Bill',
-    amount: 100,
-    note: 'Water Bill',
-    createdAt:5000
-}));
-const expenseTwo = store.dispatch(addExpense({
-    description: 'Gas Bill',
-    amount: 50,
-    note: 'Gas Bill',
-    createdAt:1000
-}));
-
-//Get Visible Expenses
-const state = store.getState();
-console.log('Displaying from Subscribe Block');
-const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
-console.log(visibleExpenses);
-
 const jsx = (
     <Provider store={store}>
         <AppRouter/>
