@@ -7,13 +7,12 @@ import { addExpense, removeExpense, editExpense} from './actions/expenses';
 import { setTextFilter, sortByAmount, sortByDate, setStartDate, setEndDate } from './actions/filters';
 import getVisibleExpenses from './selectors/visibleExpenses';
 import 'normalize.css/normalize.css';
-import 'react-dates/initialize';
 import './styles/styles.scss';
 import 'react-dates/lib/css/_datepicker.css';
 
 //Create Store
 const store = configureStore();
-
+console.log('test');
 const jsx = (
     <Provider store={store}>
         <AppRouter/>
