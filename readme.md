@@ -1,7 +1,7 @@
-# Indecision Application
+# Expensify App
 
-## Put your life in the hands of a computer
+## Track your expenses anytime
 
-### Simple App using React.JS that takes in user inputs and stores in an state array. Then prints out an element in a random fashion.
+### Web App using React.JS that is used to track your expenses. You can add, view, modify and remove your expenses.
 
-#### Demo : http://indecisionapp.herokuapp.com/
+#### Demo : 
