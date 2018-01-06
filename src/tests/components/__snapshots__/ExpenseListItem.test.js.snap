@@ -6,19 +6,20 @@ exports[`should render expense list item correctly 1`] = `
     replace={false}
     to="/edit/2"
   >
-    <h1>
+    <h3>
       Description: 
       Groceries
-    </h1>
+    </h3>
   </Link>
   <p>
     Amount: 
-    100
-     ,Created on: 
-    -345600000
+    $100.00
+    - Date: 
+    December 27th, 1969
   </p>
-  <p>
-    Expense Note: 
-  </p>
+  <i>
+    Note: 
+    N/A
+  </i>
 </div>
 `;
