@@ -7,7 +7,7 @@ test('should set up text filter of provided text', () => {
     const text = setTextFilter(filteredText);
 
     expect(text).toEqual({
-        type: 'SET_TEXT_FILTER',
+        type: 'TEXT_FILTER',
         text: filteredText
     });
 });
@@ -17,7 +17,7 @@ test('should set up text filter of default text', () => {
     const text = setTextFilter();
 
     expect(text).toEqual({
-        type: 'SET_TEXT_FILTER',
+        type: 'TEXT_FILTER',
         text: ''
     });
 });

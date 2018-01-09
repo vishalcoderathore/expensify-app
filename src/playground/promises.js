@@ -1,17 +1,33 @@
 const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
-        //resolve('this is my resolved data');
-        reject('something went wrong');
-    }, 1500);
+        const data = {
+            name: 'Vishal',
+            status: 'Student'
+        };
+        resolve(data);
+        //reject('something went wrong');
+    }, 2000);
 });
 
 console.log('before');
 
 
-promise.then(
-    (success) => {
-        console.log('success', success);
-    },
+promise
+    .then((data) => { 
+        console.log('success ' , data);
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                const data = {
+                    name: 'Vishal',
+                    status: 'Student'
+                };
+                resolve(data);
+                //reject('something went wrong');
+            }, 2000);
+        });
+    }).then((str) => { 
+        console.log('Yes it ran. Promise chaining. ', str); 
+    }),(
     (error) => {
         console.log('error', error);
     }
