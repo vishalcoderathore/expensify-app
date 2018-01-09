@@ -5,9 +5,9 @@ const webpack = require('webpack');
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 if (process.env.NODE_ENV === 'test') {
-  require('dotnet').config({ path: '.env.test' });
+  require('dotenv').config({ path: '.env.test' });
 } else if (process.env.NODE_ENV === 'development') {
-  require('dotnet').config({ path: '.env.developent' });
+  require('dotenv').config({ path: '.env.developent' });
 }
 
 module.exports = (env) => {
