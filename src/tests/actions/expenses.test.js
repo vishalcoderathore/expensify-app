@@ -1,12 +1,24 @@
 import configureMockStore from 'redux-mock-store';
 import { expenses } from '../fixtures/dummyExpenses';
-import { addExpense, removeExpense, editExpense, startAddExpense } from '../../actions/expenses';
+import { addExpense, removeExpense, editExpense, startAddExpense, setExpenses, startSetExpenses } from '../../actions/expenses';
 import database from '../../firebase/firebase';
 import uuid from 'uuid';
 import thunk from 'redux-thunk';
 
 // Create configuration for Mock Store
 const createMockStore = configureMockStore([thunk]);
+
+beforeEach((done) => {
+    const expensesData = {};
+    expenses.forEach(({ id, description, note, amount, createdAt }) => {
+        expensesData[id] = { description, note, amount, createdAt };
+    });
+    database.ref('expenses').set(expensesData).then(
+        () => {
+            done();
+        }
+    );
+});
 
 // Remove Expense Test Case
 test('should set up remove expense', () => {
@@ -84,7 +96,7 @@ test('should add expense to database and store', (done) => {
         );
 });
 
-test('should add expense with defaults to database and store', (done) => { 
+test('should add expense with defaults to database and store', (done) => {
     const store = createMockStore({});
     const expenseData = {
         description: '',
@@ -113,6 +125,29 @@ test('should add expense with defaults to database and store', (done) => {
         },
         (e) => { console.log(e); }
         );
+});
+
+test('should set up set_expenses action object with data', () => {
+    const action = setExpenses(expenses);
+    expect(action).toEqual({
+        type: 'SET_EXPENSES',
+        expenses
+    });
+});
+
+test('should fetch the expenses from the object with test data', (done) => {
+    const store = createMockStore({});
+    store.dispatch(startSetExpenses()).then(
+        () => {
+            const actions = store.getActions();
+            expect(actions[0]).toEqual({
+                type: 'SET_EXPENSES',
+                expenses
+            });
+            done();
+        }
+    );
+
 });
 
 // Add Expense with no provded Test Case

@@ -65,7 +65,7 @@ test('should edit existing expense ', () => {
 });
 
 // Edit non-existing Expense Test Case
-test('should edit non-existing expense ', () => {
+test('should not edit non-existing expense ', () => {
     const action = {
         type: 'EDIT_EXPENSE',
         id: '7',
@@ -76,4 +76,13 @@ test('should edit non-existing expense ', () => {
 
     const state = expenseReducer(expenses, action);
     expect(state).toEqual(expenses);
+});
+
+test('should set expenses', () => {
+    const action = {
+        type: 'SET_EXPENSES',
+        expenses: [expenses[1]]
+    };
+    const state = expenseReducer(expenses, action);
+    expect(state).toEqual([expenses[1]]);
 });
