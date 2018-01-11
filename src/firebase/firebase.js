@@ -1,4 +1,5 @@
 import * as firebase from 'firebase';
+import {userData} from '../actions/expenses';
 
 // Initialize Firebase
 const config = {
@@ -17,6 +18,13 @@ const database = firebase.database();
 const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
 
 
+firebase.auth().onAuthStateChanged(function (user) {
+  if (user) {
+    const currentUser = firebase.auth().currentUser;
+    userData(currentUser.displayName, currentUser.email, currentUser.emailVerified, currentUser.uid);
+
+  }
+});
 export { firebase, googleAuthProvider, database as default };
 
 
