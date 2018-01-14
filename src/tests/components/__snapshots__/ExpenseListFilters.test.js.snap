@@ -11,6 +11,7 @@ exports[`should render expense list filters correctly 1`] = `
       className="input-group__item"
     >
       <input
+        className="text-input"
         onChange={[Function]}
         placeholder="Search"
         type="text"
@@ -21,6 +22,7 @@ exports[`should render expense list filters correctly 1`] = `
       className="input-group__item"
     >
       <select
+        className="select"
         onChange={[Function]}
         value="date"
       >
@@ -143,6 +145,7 @@ exports[`should render expense list filters with alt data correctly 1`] = `
       className="input-group__item"
     >
       <input
+        className="text-input"
         onChange={[Function]}
         placeholder="Search"
         type="text"
@@ -153,6 +156,7 @@ exports[`should render expense list filters with alt data correctly 1`] = `
       className="input-group__item"
     >
       <select
+        className="select"
         onChange={[Function]}
         value="amount"
       >
