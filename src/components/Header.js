@@ -9,7 +9,7 @@ export const Header = ({ startLogout }) => (
         <div className="content-container">
             <div className="header__content">
                 <Link to="/dashboard" className="header__title">
-                    <img src="/images/expensify-logo.png" width="380" height="50" />
+                    <img src="/images/expensify-logo.png" />
                 </Link>
                 <button onClick={startLogout} className="header__button">Logout</button>
             </div>

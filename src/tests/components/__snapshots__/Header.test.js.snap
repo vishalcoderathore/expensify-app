@@ -16,9 +16,7 @@ exports[`should render header correctly 1`] = `
         to="/dashboard"
       >
         <img
-          height="50"
           src="/images/expensify-logo.png"
-          width="380"
         />
       </Link>
       <button
