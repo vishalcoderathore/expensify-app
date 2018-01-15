@@ -1,970 +1,1314 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should not set amount if invalid input 1`] = `
-<div
-  className="content-container"
+<form
+  className="form"
+  onSubmit={[Function]}
 >
-  <form
-    onSubmit={[Function]}
-  >
-    <input
-      autoFocus={true}
-      className="text-input"
-      id="desc"
-      onChange={[Function]}
-      placeholder="Description"
-      type="text"
-      value=""
-    />
-    <input
-      className="text-input"
-      onChange={[Function]}
-      placeholder="$ Amount"
-      type="text"
-      value=""
-    />
-    <withStyles(SingleDatePicker)
-      anchorDirection="left"
-      block={false}
-      customCloseIcon={null}
-      customInputIcon={null}
-      date={"1970-01-01T00:00:00.000Z"}
-      daySize={39}
-      disabled={false}
-      displayFormat={[Function]}
-      enableOutsideDays={false}
-      firstDayOfWeek={null}
-      focused={false}
-      hideKeyboardShortcutsPanel={false}
-      horizontalMargin={0}
-      id="date"
-      initialVisibleMonth={null}
-      inputIconPosition="before"
-      isDayBlocked={[Function]}
-      isDayHighlighted={[Function]}
-      isOutsideRange={[Function]}
-      isRTL={false}
-      keepOpenOnDateSelect={false}
-      monthFormat="MMMM YYYY"
-      navNext={null}
-      navPrev={null}
-      noBorder={false}
-      numberOfMonths={1}
-      onClose={[Function]}
-      onDateChange={[Function]}
-      onFocusChange={[Function]}
-      onNextMonthClick={[Function]}
-      onPrevMonthClick={[Function]}
-      openDirection="down"
-      orientation="horizontal"
-      phrases={
-        Object {
-          "calendarLabel": "Calendar",
-          "chooseAvailableDate": [Function],
-          "clearDate": "Clear Date",
-          "closeDatePicker": "Close",
-          "dateIsUnavailable": [Function],
-          "enterKey": "Enter key",
-          "escape": "Escape key",
-          "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
-          "homeEnd": "Home and end keys",
-          "jumpToNextMonth": "Move forward to switch to the next month.",
-          "jumpToPrevMonth": "Move backward to switch to the previous month.",
-          "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
-  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-          "keyboardShortcuts": "Keyboard Shortcuts",
-          "leftArrowRightArrow": "Right and left arrow keys",
-          "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-          "moveFocusByOneMonth": "Switch months.",
-          "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-          "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-          "openThisPanel": "Open this panel.",
-          "pageUpPageDown": "page up and page down keys",
-          "questionMark": "Question mark",
-          "returnFocusToInput": "Return to the date input field.",
-          "selectFocusedDate": "Select the date in focus.",
-          "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
-          "upArrowDownArrow": "up and down arrow keys",
+  <label>
+    Expense Description
+  </label>
+  <input
+    autoFocus={true}
+    className="text-input"
+    id="desc"
+    onChange={[Function]}
+    placeholder="Description"
+    type="text"
+    value=""
+  />
+  <label>
+    Expense Amount (
+    <span>
+      <FontAwesomeIcon$1
+        border={false}
+        className=""
+        fixedWidth={false}
+        flip={null}
+        icon={
+          Object {
+            "icon": Array [
+              320,
+              512,
+              Array [],
+              "f155",
+              "M113.411 169.375c0-23.337 21.536-38.417 54.865-38.417 26.726 0 54.116 12.263 76.461 28.333 5.88 4.229 14.13 2.354 17.575-4.017l23.552-43.549c2.649-4.898 1.596-10.991-2.575-14.68-24.281-21.477-59.135-34.09-91.289-37.806V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v49.832c-58.627 13.29-97.299 55.917-97.299 108.639 0 123.533 184.765 110.81 184.765 169.414 0 19.823-16.311 41.158-52.124 41.158-30.751 0-62.932-15.88-87.848-35.887-5.31-4.264-13.082-3.315-17.159 2.14l-30.389 40.667c-3.627 4.854-3.075 11.657 1.302 15.847 24.049 23.02 59.249 41.255 98.751 47.973V500c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12v-47.438c65.72-10.215 106.176-59.186 106.176-116.516.001-119.688-184.764-103.707-184.764-166.671z",
+            ],
+            "iconName": "dollar-sign",
+            "prefix": "fas",
+          }
         }
+        listItem={false}
+        mask={null}
+        name=""
+        pull={null}
+        pulse={false}
+        rotation={null}
+        size={null}
+        spin={false}
+        symbol={false}
+        transform={null}
+      />
+    </span>
+    )
+  </label>
+  <input
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Amount"
+    type="text"
+    value=""
+  />
+  <label>
+    Expense Date
+  </label>
+  <withStyles(SingleDatePicker)
+    anchorDirection="left"
+    block={true}
+    customCloseIcon={null}
+    customInputIcon={null}
+    date={"1970-01-01T00:00:00.000Z"}
+    daySize={39}
+    disabled={false}
+    displayFormat={[Function]}
+    enableOutsideDays={false}
+    firstDayOfWeek={null}
+    focused={false}
+    hideKeyboardShortcutsPanel={false}
+    horizontalMargin={0}
+    id="date"
+    initialVisibleMonth={null}
+    inputIconPosition="before"
+    isDayBlocked={[Function]}
+    isDayHighlighted={[Function]}
+    isOutsideRange={[Function]}
+    isRTL={false}
+    keepOpenOnDateSelect={false}
+    monthFormat="MMMM YYYY"
+    navNext={null}
+    navPrev={null}
+    noBorder={false}
+    numberOfMonths={1}
+    onClose={[Function]}
+    onDateChange={[Function]}
+    onFocusChange={[Function]}
+    onNextMonthClick={[Function]}
+    onPrevMonthClick={[Function]}
+    openDirection="down"
+    orientation="horizontal"
+    phrases={
+      Object {
+        "calendarLabel": "Calendar",
+        "chooseAvailableDate": [Function],
+        "clearDate": "Clear Date",
+        "closeDatePicker": "Close",
+        "dateIsUnavailable": [Function],
+        "enterKey": "Enter key",
+        "escape": "Escape key",
+        "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+        "homeEnd": "Home and end keys",
+        "jumpToNextMonth": "Move forward to switch to the next month.",
+        "jumpToPrevMonth": "Move backward to switch to the previous month.",
+        "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
+  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
+        "keyboardShortcuts": "Keyboard Shortcuts",
+        "leftArrowRightArrow": "Right and left arrow keys",
+        "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
+        "moveFocusByOneMonth": "Switch months.",
+        "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
+        "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
+        "openThisPanel": "Open this panel.",
+        "pageUpPageDown": "page up and page down keys",
+        "questionMark": "Question mark",
+        "returnFocusToInput": "Return to the date input field.",
+        "selectFocusedDate": "Select the date in focus.",
+        "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+        "upArrowDownArrow": "up and down arrow keys",
       }
-      placeholder="Date"
-      readOnly={false}
-      renderCalendarInfo={null}
-      renderDayContents={null}
-      renderMonth={null}
-      reopenPickerOnClearDate={false}
-      required={false}
-      screenReaderInputMessage=""
-      showClearDate={false}
-      showDefaultInputIcon={false}
-      small={false}
-      verticalHeight={null}
-      verticalSpacing={22}
-      weekDayFormat="dd"
-      withFullScreenPortal={false}
-      withPortal={false}
-    />
-    <textarea
-      className="textarea"
-      cols="30"
-      onChange={[Function]}
-      placeholder="Add a note for your Expense! (optional)"
-      rows="10"
-      value=""
-    />
+    }
+    placeholder="Date"
+    readOnly={false}
+    renderCalendarInfo={null}
+    renderDayContents={null}
+    renderMonth={null}
+    reopenPickerOnClearDate={false}
+    required={false}
+    screenReaderInputMessage=""
+    showClearDate={false}
+    showDefaultInputIcon={false}
+    small={false}
+    verticalHeight={null}
+    verticalSpacing={22}
+    weekDayFormat="dd"
+    withFullScreenPortal={false}
+    withPortal={false}
+  />
+  <label>
+    Expense Note
+  </label>
+  <textarea
+    className="textarea"
+    cols="30"
+    onChange={[Function]}
+    placeholder="Add a note for your Expense! (optional)"
+    rows="10"
+    value=""
+  />
+  <div>
     <button
       className="button"
     >
       Add Expense
     </button>
-  </form>
-</div>
+  </div>
+</form>
 `;
 
 exports[`should render ExpenseForm correctly 1`] = `
-<div
-  className="content-container"
+<form
+  className="form"
+  onSubmit={[Function]}
 >
-  <form
-    onSubmit={[Function]}
-  >
-    <input
-      autoFocus={true}
-      className="text-input"
-      id="desc"
-      onChange={[Function]}
-      placeholder="Description"
-      type="text"
-      value=""
-    />
-    <input
-      className="text-input"
-      onChange={[Function]}
-      placeholder="$ Amount"
-      type="text"
-      value=""
-    />
-    <withStyles(SingleDatePicker)
-      anchorDirection="left"
-      block={false}
-      customCloseIcon={null}
-      customInputIcon={null}
-      date={"1970-01-01T00:00:00.000Z"}
-      daySize={39}
-      disabled={false}
-      displayFormat={[Function]}
-      enableOutsideDays={false}
-      firstDayOfWeek={null}
-      focused={false}
-      hideKeyboardShortcutsPanel={false}
-      horizontalMargin={0}
-      id="date"
-      initialVisibleMonth={null}
-      inputIconPosition="before"
-      isDayBlocked={[Function]}
-      isDayHighlighted={[Function]}
-      isOutsideRange={[Function]}
-      isRTL={false}
-      keepOpenOnDateSelect={false}
-      monthFormat="MMMM YYYY"
-      navNext={null}
-      navPrev={null}
-      noBorder={false}
-      numberOfMonths={1}
-      onClose={[Function]}
-      onDateChange={[Function]}
-      onFocusChange={[Function]}
-      onNextMonthClick={[Function]}
-      onPrevMonthClick={[Function]}
-      openDirection="down"
-      orientation="horizontal"
-      phrases={
-        Object {
-          "calendarLabel": "Calendar",
-          "chooseAvailableDate": [Function],
-          "clearDate": "Clear Date",
-          "closeDatePicker": "Close",
-          "dateIsUnavailable": [Function],
-          "enterKey": "Enter key",
-          "escape": "Escape key",
-          "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
-          "homeEnd": "Home and end keys",
-          "jumpToNextMonth": "Move forward to switch to the next month.",
-          "jumpToPrevMonth": "Move backward to switch to the previous month.",
-          "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
-  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-          "keyboardShortcuts": "Keyboard Shortcuts",
-          "leftArrowRightArrow": "Right and left arrow keys",
-          "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-          "moveFocusByOneMonth": "Switch months.",
-          "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-          "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-          "openThisPanel": "Open this panel.",
-          "pageUpPageDown": "page up and page down keys",
-          "questionMark": "Question mark",
-          "returnFocusToInput": "Return to the date input field.",
-          "selectFocusedDate": "Select the date in focus.",
-          "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
-          "upArrowDownArrow": "up and down arrow keys",
+  <label>
+    Expense Description
+  </label>
+  <input
+    autoFocus={true}
+    className="text-input"
+    id="desc"
+    onChange={[Function]}
+    placeholder="Description"
+    type="text"
+    value=""
+  />
+  <label>
+    Expense Amount (
+    <span>
+      <FontAwesomeIcon$1
+        border={false}
+        className=""
+        fixedWidth={false}
+        flip={null}
+        icon={
+          Object {
+            "icon": Array [
+              320,
+              512,
+              Array [],
+              "f155",
+              "M113.411 169.375c0-23.337 21.536-38.417 54.865-38.417 26.726 0 54.116 12.263 76.461 28.333 5.88 4.229 14.13 2.354 17.575-4.017l23.552-43.549c2.649-4.898 1.596-10.991-2.575-14.68-24.281-21.477-59.135-34.09-91.289-37.806V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v49.832c-58.627 13.29-97.299 55.917-97.299 108.639 0 123.533 184.765 110.81 184.765 169.414 0 19.823-16.311 41.158-52.124 41.158-30.751 0-62.932-15.88-87.848-35.887-5.31-4.264-13.082-3.315-17.159 2.14l-30.389 40.667c-3.627 4.854-3.075 11.657 1.302 15.847 24.049 23.02 59.249 41.255 98.751 47.973V500c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12v-47.438c65.72-10.215 106.176-59.186 106.176-116.516.001-119.688-184.764-103.707-184.764-166.671z",
+            ],
+            "iconName": "dollar-sign",
+            "prefix": "fas",
+          }
         }
+        listItem={false}
+        mask={null}
+        name=""
+        pull={null}
+        pulse={false}
+        rotation={null}
+        size={null}
+        spin={false}
+        symbol={false}
+        transform={null}
+      />
+    </span>
+    )
+  </label>
+  <input
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Amount"
+    type="text"
+    value=""
+  />
+  <label>
+    Expense Date
+  </label>
+  <withStyles(SingleDatePicker)
+    anchorDirection="left"
+    block={true}
+    customCloseIcon={null}
+    customInputIcon={null}
+    date={"1970-01-01T00:00:00.000Z"}
+    daySize={39}
+    disabled={false}
+    displayFormat={[Function]}
+    enableOutsideDays={false}
+    firstDayOfWeek={null}
+    focused={false}
+    hideKeyboardShortcutsPanel={false}
+    horizontalMargin={0}
+    id="date"
+    initialVisibleMonth={null}
+    inputIconPosition="before"
+    isDayBlocked={[Function]}
+    isDayHighlighted={[Function]}
+    isOutsideRange={[Function]}
+    isRTL={false}
+    keepOpenOnDateSelect={false}
+    monthFormat="MMMM YYYY"
+    navNext={null}
+    navPrev={null}
+    noBorder={false}
+    numberOfMonths={1}
+    onClose={[Function]}
+    onDateChange={[Function]}
+    onFocusChange={[Function]}
+    onNextMonthClick={[Function]}
+    onPrevMonthClick={[Function]}
+    openDirection="down"
+    orientation="horizontal"
+    phrases={
+      Object {
+        "calendarLabel": "Calendar",
+        "chooseAvailableDate": [Function],
+        "clearDate": "Clear Date",
+        "closeDatePicker": "Close",
+        "dateIsUnavailable": [Function],
+        "enterKey": "Enter key",
+        "escape": "Escape key",
+        "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+        "homeEnd": "Home and end keys",
+        "jumpToNextMonth": "Move forward to switch to the next month.",
+        "jumpToPrevMonth": "Move backward to switch to the previous month.",
+        "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
+  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
+        "keyboardShortcuts": "Keyboard Shortcuts",
+        "leftArrowRightArrow": "Right and left arrow keys",
+        "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
+        "moveFocusByOneMonth": "Switch months.",
+        "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
+        "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
+        "openThisPanel": "Open this panel.",
+        "pageUpPageDown": "page up and page down keys",
+        "questionMark": "Question mark",
+        "returnFocusToInput": "Return to the date input field.",
+        "selectFocusedDate": "Select the date in focus.",
+        "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+        "upArrowDownArrow": "up and down arrow keys",
       }
-      placeholder="Date"
-      readOnly={false}
-      renderCalendarInfo={null}
-      renderDayContents={null}
-      renderMonth={null}
-      reopenPickerOnClearDate={false}
-      required={false}
-      screenReaderInputMessage=""
-      showClearDate={false}
-      showDefaultInputIcon={false}
-      small={false}
-      verticalHeight={null}
-      verticalSpacing={22}
-      weekDayFormat="dd"
-      withFullScreenPortal={false}
-      withPortal={false}
-    />
-    <textarea
-      className="textarea"
-      cols="30"
-      onChange={[Function]}
-      placeholder="Add a note for your Expense! (optional)"
-      rows="10"
-      value=""
-    />
+    }
+    placeholder="Date"
+    readOnly={false}
+    renderCalendarInfo={null}
+    renderDayContents={null}
+    renderMonth={null}
+    reopenPickerOnClearDate={false}
+    required={false}
+    screenReaderInputMessage=""
+    showClearDate={false}
+    showDefaultInputIcon={false}
+    small={false}
+    verticalHeight={null}
+    verticalSpacing={22}
+    weekDayFormat="dd"
+    withFullScreenPortal={false}
+    withPortal={false}
+  />
+  <label>
+    Expense Note
+  </label>
+  <textarea
+    className="textarea"
+    cols="30"
+    onChange={[Function]}
+    placeholder="Add a note for your Expense! (optional)"
+    rows="10"
+    value=""
+  />
+  <div>
     <button
       className="button"
     >
       Add Expense
     </button>
-  </form>
-</div>
+  </div>
+</form>
 `;
 
 exports[`should render ExpenseForm correctly with expense data 1`] = `
-<div
-  className="content-container"
+<form
+  className="form"
+  onSubmit={[Function]}
 >
-  <form
-    onSubmit={[Function]}
-  >
-    <input
-      autoFocus={true}
-      className="text-input"
-      id="desc"
-      onChange={[Function]}
-      placeholder="Description"
-      type="text"
-      value="Groceries"
-    />
-    <input
-      className="text-input"
-      onChange={[Function]}
-      placeholder="$ Amount"
-      type="text"
-      value="100"
-    />
-    <withStyles(SingleDatePicker)
-      anchorDirection="left"
-      block={false}
-      customCloseIcon={null}
-      customInputIcon={null}
-      date={"1969-12-28T00:00:00.000Z"}
-      daySize={39}
-      disabled={false}
-      displayFormat={[Function]}
-      enableOutsideDays={false}
-      firstDayOfWeek={null}
-      focused={false}
-      hideKeyboardShortcutsPanel={false}
-      horizontalMargin={0}
-      id="date"
-      initialVisibleMonth={null}
-      inputIconPosition="before"
-      isDayBlocked={[Function]}
-      isDayHighlighted={[Function]}
-      isOutsideRange={[Function]}
-      isRTL={false}
-      keepOpenOnDateSelect={false}
-      monthFormat="MMMM YYYY"
-      navNext={null}
-      navPrev={null}
-      noBorder={false}
-      numberOfMonths={1}
-      onClose={[Function]}
-      onDateChange={[Function]}
-      onFocusChange={[Function]}
-      onNextMonthClick={[Function]}
-      onPrevMonthClick={[Function]}
-      openDirection="down"
-      orientation="horizontal"
-      phrases={
-        Object {
-          "calendarLabel": "Calendar",
-          "chooseAvailableDate": [Function],
-          "clearDate": "Clear Date",
-          "closeDatePicker": "Close",
-          "dateIsUnavailable": [Function],
-          "enterKey": "Enter key",
-          "escape": "Escape key",
-          "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
-          "homeEnd": "Home and end keys",
-          "jumpToNextMonth": "Move forward to switch to the next month.",
-          "jumpToPrevMonth": "Move backward to switch to the previous month.",
-          "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
-  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-          "keyboardShortcuts": "Keyboard Shortcuts",
-          "leftArrowRightArrow": "Right and left arrow keys",
-          "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-          "moveFocusByOneMonth": "Switch months.",
-          "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-          "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-          "openThisPanel": "Open this panel.",
-          "pageUpPageDown": "page up and page down keys",
-          "questionMark": "Question mark",
-          "returnFocusToInput": "Return to the date input field.",
-          "selectFocusedDate": "Select the date in focus.",
-          "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
-          "upArrowDownArrow": "up and down arrow keys",
+  <label>
+    Expense Description
+  </label>
+  <input
+    autoFocus={true}
+    className="text-input"
+    id="desc"
+    onChange={[Function]}
+    placeholder="Description"
+    type="text"
+    value="Groceries"
+  />
+  <label>
+    Expense Amount (
+    <span>
+      <FontAwesomeIcon$1
+        border={false}
+        className=""
+        fixedWidth={false}
+        flip={null}
+        icon={
+          Object {
+            "icon": Array [
+              320,
+              512,
+              Array [],
+              "f155",
+              "M113.411 169.375c0-23.337 21.536-38.417 54.865-38.417 26.726 0 54.116 12.263 76.461 28.333 5.88 4.229 14.13 2.354 17.575-4.017l23.552-43.549c2.649-4.898 1.596-10.991-2.575-14.68-24.281-21.477-59.135-34.09-91.289-37.806V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v49.832c-58.627 13.29-97.299 55.917-97.299 108.639 0 123.533 184.765 110.81 184.765 169.414 0 19.823-16.311 41.158-52.124 41.158-30.751 0-62.932-15.88-87.848-35.887-5.31-4.264-13.082-3.315-17.159 2.14l-30.389 40.667c-3.627 4.854-3.075 11.657 1.302 15.847 24.049 23.02 59.249 41.255 98.751 47.973V500c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12v-47.438c65.72-10.215 106.176-59.186 106.176-116.516.001-119.688-184.764-103.707-184.764-166.671z",
+            ],
+            "iconName": "dollar-sign",
+            "prefix": "fas",
+          }
         }
+        listItem={false}
+        mask={null}
+        name=""
+        pull={null}
+        pulse={false}
+        rotation={null}
+        size={null}
+        spin={false}
+        symbol={false}
+        transform={null}
+      />
+    </span>
+    )
+  </label>
+  <input
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Amount"
+    type="text"
+    value="100"
+  />
+  <label>
+    Expense Date
+  </label>
+  <withStyles(SingleDatePicker)
+    anchorDirection="left"
+    block={true}
+    customCloseIcon={null}
+    customInputIcon={null}
+    date={"1969-12-28T00:00:00.000Z"}
+    daySize={39}
+    disabled={false}
+    displayFormat={[Function]}
+    enableOutsideDays={false}
+    firstDayOfWeek={null}
+    focused={false}
+    hideKeyboardShortcutsPanel={false}
+    horizontalMargin={0}
+    id="date"
+    initialVisibleMonth={null}
+    inputIconPosition="before"
+    isDayBlocked={[Function]}
+    isDayHighlighted={[Function]}
+    isOutsideRange={[Function]}
+    isRTL={false}
+    keepOpenOnDateSelect={false}
+    monthFormat="MMMM YYYY"
+    navNext={null}
+    navPrev={null}
+    noBorder={false}
+    numberOfMonths={1}
+    onClose={[Function]}
+    onDateChange={[Function]}
+    onFocusChange={[Function]}
+    onNextMonthClick={[Function]}
+    onPrevMonthClick={[Function]}
+    openDirection="down"
+    orientation="horizontal"
+    phrases={
+      Object {
+        "calendarLabel": "Calendar",
+        "chooseAvailableDate": [Function],
+        "clearDate": "Clear Date",
+        "closeDatePicker": "Close",
+        "dateIsUnavailable": [Function],
+        "enterKey": "Enter key",
+        "escape": "Escape key",
+        "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+        "homeEnd": "Home and end keys",
+        "jumpToNextMonth": "Move forward to switch to the next month.",
+        "jumpToPrevMonth": "Move backward to switch to the previous month.",
+        "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
+  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
+        "keyboardShortcuts": "Keyboard Shortcuts",
+        "leftArrowRightArrow": "Right and left arrow keys",
+        "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
+        "moveFocusByOneMonth": "Switch months.",
+        "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
+        "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
+        "openThisPanel": "Open this panel.",
+        "pageUpPageDown": "page up and page down keys",
+        "questionMark": "Question mark",
+        "returnFocusToInput": "Return to the date input field.",
+        "selectFocusedDate": "Select the date in focus.",
+        "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+        "upArrowDownArrow": "up and down arrow keys",
       }
-      placeholder="Date"
-      readOnly={false}
-      renderCalendarInfo={null}
-      renderDayContents={null}
-      renderMonth={null}
-      reopenPickerOnClearDate={false}
-      required={false}
-      screenReaderInputMessage=""
-      showClearDate={false}
-      showDefaultInputIcon={false}
-      small={false}
-      verticalHeight={null}
-      verticalSpacing={22}
-      weekDayFormat="dd"
-      withFullScreenPortal={false}
-      withPortal={false}
-    />
-    <textarea
-      className="textarea"
-      cols="30"
-      onChange={[Function]}
-      placeholder="Add a note for your Expense! (optional)"
-      rows="10"
-      value=""
-    />
+    }
+    placeholder="Date"
+    readOnly={false}
+    renderCalendarInfo={null}
+    renderDayContents={null}
+    renderMonth={null}
+    reopenPickerOnClearDate={false}
+    required={false}
+    screenReaderInputMessage=""
+    showClearDate={false}
+    showDefaultInputIcon={false}
+    small={false}
+    verticalHeight={null}
+    verticalSpacing={22}
+    weekDayFormat="dd"
+    withFullScreenPortal={false}
+    withPortal={false}
+  />
+  <label>
+    Expense Note
+  </label>
+  <textarea
+    className="textarea"
+    cols="30"
+    onChange={[Function]}
+    placeholder="Add a note for your Expense! (optional)"
+    rows="10"
+    value=""
+  />
+  <div>
     <button
       className="button"
     >
       Update Expense
     </button>
-  </form>
-</div>
+  </div>
+</form>
 `;
 
 exports[`should render error message on invalid form submit 1`] = `
-<div
-  className="content-container"
+<form
+  className="form"
+  onSubmit={[Function]}
 >
-  <form
-    onSubmit={[Function]}
-  >
-    <input
-      autoFocus={true}
-      className="text-input"
-      id="desc"
-      onChange={[Function]}
-      placeholder="Description"
-      type="text"
-      value=""
-    />
-    <input
-      className="text-input"
-      onChange={[Function]}
-      placeholder="$ Amount"
-      type="text"
-      value=""
-    />
-    <withStyles(SingleDatePicker)
-      anchorDirection="left"
-      block={false}
-      customCloseIcon={null}
-      customInputIcon={null}
-      date={"1970-01-01T00:00:00.000Z"}
-      daySize={39}
-      disabled={false}
-      displayFormat={[Function]}
-      enableOutsideDays={false}
-      firstDayOfWeek={null}
-      focused={false}
-      hideKeyboardShortcutsPanel={false}
-      horizontalMargin={0}
-      id="date"
-      initialVisibleMonth={null}
-      inputIconPosition="before"
-      isDayBlocked={[Function]}
-      isDayHighlighted={[Function]}
-      isOutsideRange={[Function]}
-      isRTL={false}
-      keepOpenOnDateSelect={false}
-      monthFormat="MMMM YYYY"
-      navNext={null}
-      navPrev={null}
-      noBorder={false}
-      numberOfMonths={1}
-      onClose={[Function]}
-      onDateChange={[Function]}
-      onFocusChange={[Function]}
-      onNextMonthClick={[Function]}
-      onPrevMonthClick={[Function]}
-      openDirection="down"
-      orientation="horizontal"
-      phrases={
-        Object {
-          "calendarLabel": "Calendar",
-          "chooseAvailableDate": [Function],
-          "clearDate": "Clear Date",
-          "closeDatePicker": "Close",
-          "dateIsUnavailable": [Function],
-          "enterKey": "Enter key",
-          "escape": "Escape key",
-          "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
-          "homeEnd": "Home and end keys",
-          "jumpToNextMonth": "Move forward to switch to the next month.",
-          "jumpToPrevMonth": "Move backward to switch to the previous month.",
-          "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
-  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-          "keyboardShortcuts": "Keyboard Shortcuts",
-          "leftArrowRightArrow": "Right and left arrow keys",
-          "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-          "moveFocusByOneMonth": "Switch months.",
-          "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-          "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-          "openThisPanel": "Open this panel.",
-          "pageUpPageDown": "page up and page down keys",
-          "questionMark": "Question mark",
-          "returnFocusToInput": "Return to the date input field.",
-          "selectFocusedDate": "Select the date in focus.",
-          "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
-          "upArrowDownArrow": "up and down arrow keys",
+  <label>
+    Expense Description
+  </label>
+  <input
+    autoFocus={true}
+    className="text-input"
+    id="desc"
+    onChange={[Function]}
+    placeholder="Description"
+    type="text"
+    value=""
+  />
+  <label>
+    Expense Amount (
+    <span>
+      <FontAwesomeIcon$1
+        border={false}
+        className=""
+        fixedWidth={false}
+        flip={null}
+        icon={
+          Object {
+            "icon": Array [
+              320,
+              512,
+              Array [],
+              "f155",
+              "M113.411 169.375c0-23.337 21.536-38.417 54.865-38.417 26.726 0 54.116 12.263 76.461 28.333 5.88 4.229 14.13 2.354 17.575-4.017l23.552-43.549c2.649-4.898 1.596-10.991-2.575-14.68-24.281-21.477-59.135-34.09-91.289-37.806V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v49.832c-58.627 13.29-97.299 55.917-97.299 108.639 0 123.533 184.765 110.81 184.765 169.414 0 19.823-16.311 41.158-52.124 41.158-30.751 0-62.932-15.88-87.848-35.887-5.31-4.264-13.082-3.315-17.159 2.14l-30.389 40.667c-3.627 4.854-3.075 11.657 1.302 15.847 24.049 23.02 59.249 41.255 98.751 47.973V500c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12v-47.438c65.72-10.215 106.176-59.186 106.176-116.516.001-119.688-184.764-103.707-184.764-166.671z",
+            ],
+            "iconName": "dollar-sign",
+            "prefix": "fas",
+          }
         }
+        listItem={false}
+        mask={null}
+        name=""
+        pull={null}
+        pulse={false}
+        rotation={null}
+        size={null}
+        spin={false}
+        symbol={false}
+        transform={null}
+      />
+    </span>
+    )
+  </label>
+  <input
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Amount"
+    type="text"
+    value=""
+  />
+  <label>
+    Expense Date
+  </label>
+  <withStyles(SingleDatePicker)
+    anchorDirection="left"
+    block={true}
+    customCloseIcon={null}
+    customInputIcon={null}
+    date={"1970-01-01T00:00:00.000Z"}
+    daySize={39}
+    disabled={false}
+    displayFormat={[Function]}
+    enableOutsideDays={false}
+    firstDayOfWeek={null}
+    focused={false}
+    hideKeyboardShortcutsPanel={false}
+    horizontalMargin={0}
+    id="date"
+    initialVisibleMonth={null}
+    inputIconPosition="before"
+    isDayBlocked={[Function]}
+    isDayHighlighted={[Function]}
+    isOutsideRange={[Function]}
+    isRTL={false}
+    keepOpenOnDateSelect={false}
+    monthFormat="MMMM YYYY"
+    navNext={null}
+    navPrev={null}
+    noBorder={false}
+    numberOfMonths={1}
+    onClose={[Function]}
+    onDateChange={[Function]}
+    onFocusChange={[Function]}
+    onNextMonthClick={[Function]}
+    onPrevMonthClick={[Function]}
+    openDirection="down"
+    orientation="horizontal"
+    phrases={
+      Object {
+        "calendarLabel": "Calendar",
+        "chooseAvailableDate": [Function],
+        "clearDate": "Clear Date",
+        "closeDatePicker": "Close",
+        "dateIsUnavailable": [Function],
+        "enterKey": "Enter key",
+        "escape": "Escape key",
+        "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+        "homeEnd": "Home and end keys",
+        "jumpToNextMonth": "Move forward to switch to the next month.",
+        "jumpToPrevMonth": "Move backward to switch to the previous month.",
+        "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
+  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
+        "keyboardShortcuts": "Keyboard Shortcuts",
+        "leftArrowRightArrow": "Right and left arrow keys",
+        "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
+        "moveFocusByOneMonth": "Switch months.",
+        "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
+        "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
+        "openThisPanel": "Open this panel.",
+        "pageUpPageDown": "page up and page down keys",
+        "questionMark": "Question mark",
+        "returnFocusToInput": "Return to the date input field.",
+        "selectFocusedDate": "Select the date in focus.",
+        "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+        "upArrowDownArrow": "up and down arrow keys",
       }
-      placeholder="Date"
-      readOnly={false}
-      renderCalendarInfo={null}
-      renderDayContents={null}
-      renderMonth={null}
-      reopenPickerOnClearDate={false}
-      required={false}
-      screenReaderInputMessage=""
-      showClearDate={false}
-      showDefaultInputIcon={false}
-      small={false}
-      verticalHeight={null}
-      verticalSpacing={22}
-      weekDayFormat="dd"
-      withFullScreenPortal={false}
-      withPortal={false}
-    />
-    <textarea
-      className="textarea"
-      cols="30"
-      onChange={[Function]}
-      placeholder="Add a note for your Expense! (optional)"
-      rows="10"
-      value=""
-    />
+    }
+    placeholder="Date"
+    readOnly={false}
+    renderCalendarInfo={null}
+    renderDayContents={null}
+    renderMonth={null}
+    reopenPickerOnClearDate={false}
+    required={false}
+    screenReaderInputMessage=""
+    showClearDate={false}
+    showDefaultInputIcon={false}
+    small={false}
+    verticalHeight={null}
+    verticalSpacing={22}
+    weekDayFormat="dd"
+    withFullScreenPortal={false}
+    withPortal={false}
+  />
+  <label>
+    Expense Note
+  </label>
+  <textarea
+    className="textarea"
+    cols="30"
+    onChange={[Function]}
+    placeholder="Add a note for your Expense! (optional)"
+    rows="10"
+    value=""
+  />
+  <div>
     <button
       className="button"
     >
       Add Expense
     </button>
-  </form>
-</div>
+  </div>
+</form>
 `;
 
 exports[`should render error message on invalid form submit 2`] = `
-<div
-  className="content-container"
+<form
+  className="form"
+  onSubmit={[Function]}
 >
   <ErrorPopup />
-  <form
-    onSubmit={[Function]}
-  >
-    <input
-      autoFocus={true}
-      className="text-input"
-      id="desc"
-      onChange={[Function]}
-      placeholder="Description"
-      type="text"
-      value=""
-    />
-    <input
-      className="text-input"
-      onChange={[Function]}
-      placeholder="$ Amount"
-      type="text"
-      value=""
-    />
-    <withStyles(SingleDatePicker)
-      anchorDirection="left"
-      block={false}
-      customCloseIcon={null}
-      customInputIcon={null}
-      date={"1970-01-01T00:00:00.000Z"}
-      daySize={39}
-      disabled={false}
-      displayFormat={[Function]}
-      enableOutsideDays={false}
-      firstDayOfWeek={null}
-      focused={false}
-      hideKeyboardShortcutsPanel={false}
-      horizontalMargin={0}
-      id="date"
-      initialVisibleMonth={null}
-      inputIconPosition="before"
-      isDayBlocked={[Function]}
-      isDayHighlighted={[Function]}
-      isOutsideRange={[Function]}
-      isRTL={false}
-      keepOpenOnDateSelect={false}
-      monthFormat="MMMM YYYY"
-      navNext={null}
-      navPrev={null}
-      noBorder={false}
-      numberOfMonths={1}
-      onClose={[Function]}
-      onDateChange={[Function]}
-      onFocusChange={[Function]}
-      onNextMonthClick={[Function]}
-      onPrevMonthClick={[Function]}
-      openDirection="down"
-      orientation="horizontal"
-      phrases={
-        Object {
-          "calendarLabel": "Calendar",
-          "chooseAvailableDate": [Function],
-          "clearDate": "Clear Date",
-          "closeDatePicker": "Close",
-          "dateIsUnavailable": [Function],
-          "enterKey": "Enter key",
-          "escape": "Escape key",
-          "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
-          "homeEnd": "Home and end keys",
-          "jumpToNextMonth": "Move forward to switch to the next month.",
-          "jumpToPrevMonth": "Move backward to switch to the previous month.",
-          "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
-  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-          "keyboardShortcuts": "Keyboard Shortcuts",
-          "leftArrowRightArrow": "Right and left arrow keys",
-          "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-          "moveFocusByOneMonth": "Switch months.",
-          "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-          "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-          "openThisPanel": "Open this panel.",
-          "pageUpPageDown": "page up and page down keys",
-          "questionMark": "Question mark",
-          "returnFocusToInput": "Return to the date input field.",
-          "selectFocusedDate": "Select the date in focus.",
-          "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
-          "upArrowDownArrow": "up and down arrow keys",
+  <label>
+    Expense Description
+  </label>
+  <input
+    autoFocus={true}
+    className="text-input"
+    id="desc"
+    onChange={[Function]}
+    placeholder="Description"
+    type="text"
+    value=""
+  />
+  <label>
+    Expense Amount (
+    <span>
+      <FontAwesomeIcon$1
+        border={false}
+        className=""
+        fixedWidth={false}
+        flip={null}
+        icon={
+          Object {
+            "icon": Array [
+              320,
+              512,
+              Array [],
+              "f155",
+              "M113.411 169.375c0-23.337 21.536-38.417 54.865-38.417 26.726 0 54.116 12.263 76.461 28.333 5.88 4.229 14.13 2.354 17.575-4.017l23.552-43.549c2.649-4.898 1.596-10.991-2.575-14.68-24.281-21.477-59.135-34.09-91.289-37.806V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v49.832c-58.627 13.29-97.299 55.917-97.299 108.639 0 123.533 184.765 110.81 184.765 169.414 0 19.823-16.311 41.158-52.124 41.158-30.751 0-62.932-15.88-87.848-35.887-5.31-4.264-13.082-3.315-17.159 2.14l-30.389 40.667c-3.627 4.854-3.075 11.657 1.302 15.847 24.049 23.02 59.249 41.255 98.751 47.973V500c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12v-47.438c65.72-10.215 106.176-59.186 106.176-116.516.001-119.688-184.764-103.707-184.764-166.671z",
+            ],
+            "iconName": "dollar-sign",
+            "prefix": "fas",
+          }
         }
+        listItem={false}
+        mask={null}
+        name=""
+        pull={null}
+        pulse={false}
+        rotation={null}
+        size={null}
+        spin={false}
+        symbol={false}
+        transform={null}
+      />
+    </span>
+    )
+  </label>
+  <input
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Amount"
+    type="text"
+    value=""
+  />
+  <label>
+    Expense Date
+  </label>
+  <withStyles(SingleDatePicker)
+    anchorDirection="left"
+    block={true}
+    customCloseIcon={null}
+    customInputIcon={null}
+    date={"1970-01-01T00:00:00.000Z"}
+    daySize={39}
+    disabled={false}
+    displayFormat={[Function]}
+    enableOutsideDays={false}
+    firstDayOfWeek={null}
+    focused={false}
+    hideKeyboardShortcutsPanel={false}
+    horizontalMargin={0}
+    id="date"
+    initialVisibleMonth={null}
+    inputIconPosition="before"
+    isDayBlocked={[Function]}
+    isDayHighlighted={[Function]}
+    isOutsideRange={[Function]}
+    isRTL={false}
+    keepOpenOnDateSelect={false}
+    monthFormat="MMMM YYYY"
+    navNext={null}
+    navPrev={null}
+    noBorder={false}
+    numberOfMonths={1}
+    onClose={[Function]}
+    onDateChange={[Function]}
+    onFocusChange={[Function]}
+    onNextMonthClick={[Function]}
+    onPrevMonthClick={[Function]}
+    openDirection="down"
+    orientation="horizontal"
+    phrases={
+      Object {
+        "calendarLabel": "Calendar",
+        "chooseAvailableDate": [Function],
+        "clearDate": "Clear Date",
+        "closeDatePicker": "Close",
+        "dateIsUnavailable": [Function],
+        "enterKey": "Enter key",
+        "escape": "Escape key",
+        "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+        "homeEnd": "Home and end keys",
+        "jumpToNextMonth": "Move forward to switch to the next month.",
+        "jumpToPrevMonth": "Move backward to switch to the previous month.",
+        "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
+  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
+        "keyboardShortcuts": "Keyboard Shortcuts",
+        "leftArrowRightArrow": "Right and left arrow keys",
+        "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
+        "moveFocusByOneMonth": "Switch months.",
+        "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
+        "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
+        "openThisPanel": "Open this panel.",
+        "pageUpPageDown": "page up and page down keys",
+        "questionMark": "Question mark",
+        "returnFocusToInput": "Return to the date input field.",
+        "selectFocusedDate": "Select the date in focus.",
+        "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+        "upArrowDownArrow": "up and down arrow keys",
       }
-      placeholder="Date"
-      readOnly={false}
-      renderCalendarInfo={null}
-      renderDayContents={null}
-      renderMonth={null}
-      reopenPickerOnClearDate={false}
-      required={false}
-      screenReaderInputMessage=""
-      showClearDate={false}
-      showDefaultInputIcon={false}
-      small={false}
-      verticalHeight={null}
-      verticalSpacing={22}
-      weekDayFormat="dd"
-      withFullScreenPortal={false}
-      withPortal={false}
-    />
-    <textarea
-      className="textarea"
-      cols="30"
-      onChange={[Function]}
-      placeholder="Add a note for your Expense! (optional)"
-      rows="10"
-      value=""
-    />
+    }
+    placeholder="Date"
+    readOnly={false}
+    renderCalendarInfo={null}
+    renderDayContents={null}
+    renderMonth={null}
+    reopenPickerOnClearDate={false}
+    required={false}
+    screenReaderInputMessage=""
+    showClearDate={false}
+    showDefaultInputIcon={false}
+    small={false}
+    verticalHeight={null}
+    verticalSpacing={22}
+    weekDayFormat="dd"
+    withFullScreenPortal={false}
+    withPortal={false}
+  />
+  <label>
+    Expense Note
+  </label>
+  <textarea
+    className="textarea"
+    cols="30"
+    onChange={[Function]}
+    placeholder="Add a note for your Expense! (optional)"
+    rows="10"
+    value=""
+  />
+  <div>
     <button
       className="button"
     >
       Add Expense
     </button>
-  </form>
-</div>
+  </div>
+</form>
 `;
 
 exports[`should set amount if valid input 1`] = `
-<div
-  className="content-container"
+<form
+  className="form"
+  onSubmit={[Function]}
 >
-  <form
-    onSubmit={[Function]}
-  >
-    <input
-      autoFocus={true}
-      className="text-input"
-      id="desc"
-      onChange={[Function]}
-      placeholder="Description"
-      type="text"
-      value=""
-    />
-    <input
-      className="text-input"
-      onChange={[Function]}
-      placeholder="$ Amount"
-      type="text"
-      value="49.99"
-    />
-    <withStyles(SingleDatePicker)
-      anchorDirection="left"
-      block={false}
-      customCloseIcon={null}
-      customInputIcon={null}
-      date={"1970-01-01T00:00:00.000Z"}
-      daySize={39}
-      disabled={false}
-      displayFormat={[Function]}
-      enableOutsideDays={false}
-      firstDayOfWeek={null}
-      focused={false}
-      hideKeyboardShortcutsPanel={false}
-      horizontalMargin={0}
-      id="date"
-      initialVisibleMonth={null}
-      inputIconPosition="before"
-      isDayBlocked={[Function]}
-      isDayHighlighted={[Function]}
-      isOutsideRange={[Function]}
-      isRTL={false}
-      keepOpenOnDateSelect={false}
-      monthFormat="MMMM YYYY"
-      navNext={null}
-      navPrev={null}
-      noBorder={false}
-      numberOfMonths={1}
-      onClose={[Function]}
-      onDateChange={[Function]}
-      onFocusChange={[Function]}
-      onNextMonthClick={[Function]}
-      onPrevMonthClick={[Function]}
-      openDirection="down"
-      orientation="horizontal"
-      phrases={
-        Object {
-          "calendarLabel": "Calendar",
-          "chooseAvailableDate": [Function],
-          "clearDate": "Clear Date",
-          "closeDatePicker": "Close",
-          "dateIsUnavailable": [Function],
-          "enterKey": "Enter key",
-          "escape": "Escape key",
-          "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
-          "homeEnd": "Home and end keys",
-          "jumpToNextMonth": "Move forward to switch to the next month.",
-          "jumpToPrevMonth": "Move backward to switch to the previous month.",
-          "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
-  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-          "keyboardShortcuts": "Keyboard Shortcuts",
-          "leftArrowRightArrow": "Right and left arrow keys",
-          "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-          "moveFocusByOneMonth": "Switch months.",
-          "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-          "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-          "openThisPanel": "Open this panel.",
-          "pageUpPageDown": "page up and page down keys",
-          "questionMark": "Question mark",
-          "returnFocusToInput": "Return to the date input field.",
-          "selectFocusedDate": "Select the date in focus.",
-          "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
-          "upArrowDownArrow": "up and down arrow keys",
+  <label>
+    Expense Description
+  </label>
+  <input
+    autoFocus={true}
+    className="text-input"
+    id="desc"
+    onChange={[Function]}
+    placeholder="Description"
+    type="text"
+    value=""
+  />
+  <label>
+    Expense Amount (
+    <span>
+      <FontAwesomeIcon$1
+        border={false}
+        className=""
+        fixedWidth={false}
+        flip={null}
+        icon={
+          Object {
+            "icon": Array [
+              320,
+              512,
+              Array [],
+              "f155",
+              "M113.411 169.375c0-23.337 21.536-38.417 54.865-38.417 26.726 0 54.116 12.263 76.461 28.333 5.88 4.229 14.13 2.354 17.575-4.017l23.552-43.549c2.649-4.898 1.596-10.991-2.575-14.68-24.281-21.477-59.135-34.09-91.289-37.806V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v49.832c-58.627 13.29-97.299 55.917-97.299 108.639 0 123.533 184.765 110.81 184.765 169.414 0 19.823-16.311 41.158-52.124 41.158-30.751 0-62.932-15.88-87.848-35.887-5.31-4.264-13.082-3.315-17.159 2.14l-30.389 40.667c-3.627 4.854-3.075 11.657 1.302 15.847 24.049 23.02 59.249 41.255 98.751 47.973V500c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12v-47.438c65.72-10.215 106.176-59.186 106.176-116.516.001-119.688-184.764-103.707-184.764-166.671z",
+            ],
+            "iconName": "dollar-sign",
+            "prefix": "fas",
+          }
         }
+        listItem={false}
+        mask={null}
+        name=""
+        pull={null}
+        pulse={false}
+        rotation={null}
+        size={null}
+        spin={false}
+        symbol={false}
+        transform={null}
+      />
+    </span>
+    )
+  </label>
+  <input
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Amount"
+    type="text"
+    value="49.99"
+  />
+  <label>
+    Expense Date
+  </label>
+  <withStyles(SingleDatePicker)
+    anchorDirection="left"
+    block={true}
+    customCloseIcon={null}
+    customInputIcon={null}
+    date={"1970-01-01T00:00:00.000Z"}
+    daySize={39}
+    disabled={false}
+    displayFormat={[Function]}
+    enableOutsideDays={false}
+    firstDayOfWeek={null}
+    focused={false}
+    hideKeyboardShortcutsPanel={false}
+    horizontalMargin={0}
+    id="date"
+    initialVisibleMonth={null}
+    inputIconPosition="before"
+    isDayBlocked={[Function]}
+    isDayHighlighted={[Function]}
+    isOutsideRange={[Function]}
+    isRTL={false}
+    keepOpenOnDateSelect={false}
+    monthFormat="MMMM YYYY"
+    navNext={null}
+    navPrev={null}
+    noBorder={false}
+    numberOfMonths={1}
+    onClose={[Function]}
+    onDateChange={[Function]}
+    onFocusChange={[Function]}
+    onNextMonthClick={[Function]}
+    onPrevMonthClick={[Function]}
+    openDirection="down"
+    orientation="horizontal"
+    phrases={
+      Object {
+        "calendarLabel": "Calendar",
+        "chooseAvailableDate": [Function],
+        "clearDate": "Clear Date",
+        "closeDatePicker": "Close",
+        "dateIsUnavailable": [Function],
+        "enterKey": "Enter key",
+        "escape": "Escape key",
+        "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+        "homeEnd": "Home and end keys",
+        "jumpToNextMonth": "Move forward to switch to the next month.",
+        "jumpToPrevMonth": "Move backward to switch to the previous month.",
+        "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
+  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
+        "keyboardShortcuts": "Keyboard Shortcuts",
+        "leftArrowRightArrow": "Right and left arrow keys",
+        "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
+        "moveFocusByOneMonth": "Switch months.",
+        "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
+        "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
+        "openThisPanel": "Open this panel.",
+        "pageUpPageDown": "page up and page down keys",
+        "questionMark": "Question mark",
+        "returnFocusToInput": "Return to the date input field.",
+        "selectFocusedDate": "Select the date in focus.",
+        "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+        "upArrowDownArrow": "up and down arrow keys",
       }
-      placeholder="Date"
-      readOnly={false}
-      renderCalendarInfo={null}
-      renderDayContents={null}
-      renderMonth={null}
-      reopenPickerOnClearDate={false}
-      required={false}
-      screenReaderInputMessage=""
-      showClearDate={false}
-      showDefaultInputIcon={false}
-      small={false}
-      verticalHeight={null}
-      verticalSpacing={22}
-      weekDayFormat="dd"
-      withFullScreenPortal={false}
-      withPortal={false}
-    />
-    <textarea
-      className="textarea"
-      cols="30"
-      onChange={[Function]}
-      placeholder="Add a note for your Expense! (optional)"
-      rows="10"
-      value=""
-    />
+    }
+    placeholder="Date"
+    readOnly={false}
+    renderCalendarInfo={null}
+    renderDayContents={null}
+    renderMonth={null}
+    reopenPickerOnClearDate={false}
+    required={false}
+    screenReaderInputMessage=""
+    showClearDate={false}
+    showDefaultInputIcon={false}
+    small={false}
+    verticalHeight={null}
+    verticalSpacing={22}
+    weekDayFormat="dd"
+    withFullScreenPortal={false}
+    withPortal={false}
+  />
+  <label>
+    Expense Note
+  </label>
+  <textarea
+    className="textarea"
+    cols="30"
+    onChange={[Function]}
+    placeholder="Add a note for your Expense! (optional)"
+    rows="10"
+    value=""
+  />
+  <div>
     <button
       className="button"
     >
       Add Expense
     </button>
-  </form>
-</div>
+  </div>
+</form>
 `;
 
 exports[`should set description on input change 1`] = `
-<div
-  className="content-container"
+<form
+  className="form"
+  onSubmit={[Function]}
 >
-  <form
-    onSubmit={[Function]}
-  >
-    <input
-      autoFocus={true}
-      className="text-input"
-      id="desc"
-      onChange={[Function]}
-      placeholder="Description"
-      type="text"
-      value="New description"
-    />
-    <input
-      className="text-input"
-      onChange={[Function]}
-      placeholder="$ Amount"
-      type="text"
-      value=""
-    />
-    <withStyles(SingleDatePicker)
-      anchorDirection="left"
-      block={false}
-      customCloseIcon={null}
-      customInputIcon={null}
-      date={"1970-01-01T00:00:00.000Z"}
-      daySize={39}
-      disabled={false}
-      displayFormat={[Function]}
-      enableOutsideDays={false}
-      firstDayOfWeek={null}
-      focused={false}
-      hideKeyboardShortcutsPanel={false}
-      horizontalMargin={0}
-      id="date"
-      initialVisibleMonth={null}
-      inputIconPosition="before"
-      isDayBlocked={[Function]}
-      isDayHighlighted={[Function]}
-      isOutsideRange={[Function]}
-      isRTL={false}
-      keepOpenOnDateSelect={false}
-      monthFormat="MMMM YYYY"
-      navNext={null}
-      navPrev={null}
-      noBorder={false}
-      numberOfMonths={1}
-      onClose={[Function]}
-      onDateChange={[Function]}
-      onFocusChange={[Function]}
-      onNextMonthClick={[Function]}
-      onPrevMonthClick={[Function]}
-      openDirection="down"
-      orientation="horizontal"
-      phrases={
-        Object {
-          "calendarLabel": "Calendar",
-          "chooseAvailableDate": [Function],
-          "clearDate": "Clear Date",
-          "closeDatePicker": "Close",
-          "dateIsUnavailable": [Function],
-          "enterKey": "Enter key",
-          "escape": "Escape key",
-          "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
-          "homeEnd": "Home and end keys",
-          "jumpToNextMonth": "Move forward to switch to the next month.",
-          "jumpToPrevMonth": "Move backward to switch to the previous month.",
-          "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
-  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-          "keyboardShortcuts": "Keyboard Shortcuts",
-          "leftArrowRightArrow": "Right and left arrow keys",
-          "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-          "moveFocusByOneMonth": "Switch months.",
-          "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-          "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-          "openThisPanel": "Open this panel.",
-          "pageUpPageDown": "page up and page down keys",
-          "questionMark": "Question mark",
-          "returnFocusToInput": "Return to the date input field.",
-          "selectFocusedDate": "Select the date in focus.",
-          "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
-          "upArrowDownArrow": "up and down arrow keys",
+  <label>
+    Expense Description
+  </label>
+  <input
+    autoFocus={true}
+    className="text-input"
+    id="desc"
+    onChange={[Function]}
+    placeholder="Description"
+    type="text"
+    value="New description"
+  />
+  <label>
+    Expense Amount (
+    <span>
+      <FontAwesomeIcon$1
+        border={false}
+        className=""
+        fixedWidth={false}
+        flip={null}
+        icon={
+          Object {
+            "icon": Array [
+              320,
+              512,
+              Array [],
+              "f155",
+              "M113.411 169.375c0-23.337 21.536-38.417 54.865-38.417 26.726 0 54.116 12.263 76.461 28.333 5.88 4.229 14.13 2.354 17.575-4.017l23.552-43.549c2.649-4.898 1.596-10.991-2.575-14.68-24.281-21.477-59.135-34.09-91.289-37.806V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v49.832c-58.627 13.29-97.299 55.917-97.299 108.639 0 123.533 184.765 110.81 184.765 169.414 0 19.823-16.311 41.158-52.124 41.158-30.751 0-62.932-15.88-87.848-35.887-5.31-4.264-13.082-3.315-17.159 2.14l-30.389 40.667c-3.627 4.854-3.075 11.657 1.302 15.847 24.049 23.02 59.249 41.255 98.751 47.973V500c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12v-47.438c65.72-10.215 106.176-59.186 106.176-116.516.001-119.688-184.764-103.707-184.764-166.671z",
+            ],
+            "iconName": "dollar-sign",
+            "prefix": "fas",
+          }
         }
+        listItem={false}
+        mask={null}
+        name=""
+        pull={null}
+        pulse={false}
+        rotation={null}
+        size={null}
+        spin={false}
+        symbol={false}
+        transform={null}
+      />
+    </span>
+    )
+  </label>
+  <input
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Amount"
+    type="text"
+    value=""
+  />
+  <label>
+    Expense Date
+  </label>
+  <withStyles(SingleDatePicker)
+    anchorDirection="left"
+    block={true}
+    customCloseIcon={null}
+    customInputIcon={null}
+    date={"1970-01-01T00:00:00.000Z"}
+    daySize={39}
+    disabled={false}
+    displayFormat={[Function]}
+    enableOutsideDays={false}
+    firstDayOfWeek={null}
+    focused={false}
+    hideKeyboardShortcutsPanel={false}
+    horizontalMargin={0}
+    id="date"
+    initialVisibleMonth={null}
+    inputIconPosition="before"
+    isDayBlocked={[Function]}
+    isDayHighlighted={[Function]}
+    isOutsideRange={[Function]}
+    isRTL={false}
+    keepOpenOnDateSelect={false}
+    monthFormat="MMMM YYYY"
+    navNext={null}
+    navPrev={null}
+    noBorder={false}
+    numberOfMonths={1}
+    onClose={[Function]}
+    onDateChange={[Function]}
+    onFocusChange={[Function]}
+    onNextMonthClick={[Function]}
+    onPrevMonthClick={[Function]}
+    openDirection="down"
+    orientation="horizontal"
+    phrases={
+      Object {
+        "calendarLabel": "Calendar",
+        "chooseAvailableDate": [Function],
+        "clearDate": "Clear Date",
+        "closeDatePicker": "Close",
+        "dateIsUnavailable": [Function],
+        "enterKey": "Enter key",
+        "escape": "Escape key",
+        "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+        "homeEnd": "Home and end keys",
+        "jumpToNextMonth": "Move forward to switch to the next month.",
+        "jumpToPrevMonth": "Move backward to switch to the previous month.",
+        "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
+  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
+        "keyboardShortcuts": "Keyboard Shortcuts",
+        "leftArrowRightArrow": "Right and left arrow keys",
+        "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
+        "moveFocusByOneMonth": "Switch months.",
+        "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
+        "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
+        "openThisPanel": "Open this panel.",
+        "pageUpPageDown": "page up and page down keys",
+        "questionMark": "Question mark",
+        "returnFocusToInput": "Return to the date input field.",
+        "selectFocusedDate": "Select the date in focus.",
+        "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+        "upArrowDownArrow": "up and down arrow keys",
       }
-      placeholder="Date"
-      readOnly={false}
-      renderCalendarInfo={null}
-      renderDayContents={null}
-      renderMonth={null}
-      reopenPickerOnClearDate={false}
-      required={false}
-      screenReaderInputMessage=""
-      showClearDate={false}
-      showDefaultInputIcon={false}
-      small={false}
-      verticalHeight={null}
-      verticalSpacing={22}
-      weekDayFormat="dd"
-      withFullScreenPortal={false}
-      withPortal={false}
-    />
-    <textarea
-      className="textarea"
-      cols="30"
-      onChange={[Function]}
-      placeholder="Add a note for your Expense! (optional)"
-      rows="10"
-      value=""
-    />
+    }
+    placeholder="Date"
+    readOnly={false}
+    renderCalendarInfo={null}
+    renderDayContents={null}
+    renderMonth={null}
+    reopenPickerOnClearDate={false}
+    required={false}
+    screenReaderInputMessage=""
+    showClearDate={false}
+    showDefaultInputIcon={false}
+    small={false}
+    verticalHeight={null}
+    verticalSpacing={22}
+    weekDayFormat="dd"
+    withFullScreenPortal={false}
+    withPortal={false}
+  />
+  <label>
+    Expense Note
+  </label>
+  <textarea
+    className="textarea"
+    cols="30"
+    onChange={[Function]}
+    placeholder="Add a note for your Expense! (optional)"
+    rows="10"
+    value=""
+  />
+  <div>
     <button
       className="button"
     >
       Add Expense
     </button>
-  </form>
-</div>
+  </div>
+</form>
 `;
 
 exports[`should set note on text area change 1`] = `
-<div
-  className="content-container"
+<form
+  className="form"
+  onSubmit={[Function]}
 >
-  <form
-    onSubmit={[Function]}
-  >
-    <input
-      autoFocus={true}
-      className="text-input"
-      id="desc"
-      onChange={[Function]}
-      placeholder="Description"
-      type="text"
-      value=""
-    />
-    <input
-      className="text-input"
-      onChange={[Function]}
-      placeholder="$ Amount"
-      type="text"
-      value=""
-    />
-    <withStyles(SingleDatePicker)
-      anchorDirection="left"
-      block={false}
-      customCloseIcon={null}
-      customInputIcon={null}
-      date={"1970-01-01T00:00:00.000Z"}
-      daySize={39}
-      disabled={false}
-      displayFormat={[Function]}
-      enableOutsideDays={false}
-      firstDayOfWeek={null}
-      focused={false}
-      hideKeyboardShortcutsPanel={false}
-      horizontalMargin={0}
-      id="date"
-      initialVisibleMonth={null}
-      inputIconPosition="before"
-      isDayBlocked={[Function]}
-      isDayHighlighted={[Function]}
-      isOutsideRange={[Function]}
-      isRTL={false}
-      keepOpenOnDateSelect={false}
-      monthFormat="MMMM YYYY"
-      navNext={null}
-      navPrev={null}
-      noBorder={false}
-      numberOfMonths={1}
-      onClose={[Function]}
-      onDateChange={[Function]}
-      onFocusChange={[Function]}
-      onNextMonthClick={[Function]}
-      onPrevMonthClick={[Function]}
-      openDirection="down"
-      orientation="horizontal"
-      phrases={
-        Object {
-          "calendarLabel": "Calendar",
-          "chooseAvailableDate": [Function],
-          "clearDate": "Clear Date",
-          "closeDatePicker": "Close",
-          "dateIsUnavailable": [Function],
-          "enterKey": "Enter key",
-          "escape": "Escape key",
-          "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
-          "homeEnd": "Home and end keys",
-          "jumpToNextMonth": "Move forward to switch to the next month.",
-          "jumpToPrevMonth": "Move backward to switch to the previous month.",
-          "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
-  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-          "keyboardShortcuts": "Keyboard Shortcuts",
-          "leftArrowRightArrow": "Right and left arrow keys",
-          "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-          "moveFocusByOneMonth": "Switch months.",
-          "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-          "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-          "openThisPanel": "Open this panel.",
-          "pageUpPageDown": "page up and page down keys",
-          "questionMark": "Question mark",
-          "returnFocusToInput": "Return to the date input field.",
-          "selectFocusedDate": "Select the date in focus.",
-          "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
-          "upArrowDownArrow": "up and down arrow keys",
+  <label>
+    Expense Description
+  </label>
+  <input
+    autoFocus={true}
+    className="text-input"
+    id="desc"
+    onChange={[Function]}
+    placeholder="Description"
+    type="text"
+    value=""
+  />
+  <label>
+    Expense Amount (
+    <span>
+      <FontAwesomeIcon$1
+        border={false}
+        className=""
+        fixedWidth={false}
+        flip={null}
+        icon={
+          Object {
+            "icon": Array [
+              320,
+              512,
+              Array [],
+              "f155",
+              "M113.411 169.375c0-23.337 21.536-38.417 54.865-38.417 26.726 0 54.116 12.263 76.461 28.333 5.88 4.229 14.13 2.354 17.575-4.017l23.552-43.549c2.649-4.898 1.596-10.991-2.575-14.68-24.281-21.477-59.135-34.09-91.289-37.806V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v49.832c-58.627 13.29-97.299 55.917-97.299 108.639 0 123.533 184.765 110.81 184.765 169.414 0 19.823-16.311 41.158-52.124 41.158-30.751 0-62.932-15.88-87.848-35.887-5.31-4.264-13.082-3.315-17.159 2.14l-30.389 40.667c-3.627 4.854-3.075 11.657 1.302 15.847 24.049 23.02 59.249 41.255 98.751 47.973V500c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12v-47.438c65.72-10.215 106.176-59.186 106.176-116.516.001-119.688-184.764-103.707-184.764-166.671z",
+            ],
+            "iconName": "dollar-sign",
+            "prefix": "fas",
+          }
         }
+        listItem={false}
+        mask={null}
+        name=""
+        pull={null}
+        pulse={false}
+        rotation={null}
+        size={null}
+        spin={false}
+        symbol={false}
+        transform={null}
+      />
+    </span>
+    )
+  </label>
+  <input
+    className="text-input"
+    onChange={[Function]}
+    placeholder="Amount"
+    type="text"
+    value=""
+  />
+  <label>
+    Expense Date
+  </label>
+  <withStyles(SingleDatePicker)
+    anchorDirection="left"
+    block={true}
+    customCloseIcon={null}
+    customInputIcon={null}
+    date={"1970-01-01T00:00:00.000Z"}
+    daySize={39}
+    disabled={false}
+    displayFormat={[Function]}
+    enableOutsideDays={false}
+    firstDayOfWeek={null}
+    focused={false}
+    hideKeyboardShortcutsPanel={false}
+    horizontalMargin={0}
+    id="date"
+    initialVisibleMonth={null}
+    inputIconPosition="before"
+    isDayBlocked={[Function]}
+    isDayHighlighted={[Function]}
+    isOutsideRange={[Function]}
+    isRTL={false}
+    keepOpenOnDateSelect={false}
+    monthFormat="MMMM YYYY"
+    navNext={null}
+    navPrev={null}
+    noBorder={false}
+    numberOfMonths={1}
+    onClose={[Function]}
+    onDateChange={[Function]}
+    onFocusChange={[Function]}
+    onNextMonthClick={[Function]}
+    onPrevMonthClick={[Function]}
+    openDirection="down"
+    orientation="horizontal"
+    phrases={
+      Object {
+        "calendarLabel": "Calendar",
+        "chooseAvailableDate": [Function],
+        "clearDate": "Clear Date",
+        "closeDatePicker": "Close",
+        "dateIsUnavailable": [Function],
+        "enterKey": "Enter key",
+        "escape": "Escape key",
+        "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+        "homeEnd": "Home and end keys",
+        "jumpToNextMonth": "Move forward to switch to the next month.",
+        "jumpToPrevMonth": "Move backward to switch to the previous month.",
+        "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
+  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
+        "keyboardShortcuts": "Keyboard Shortcuts",
+        "leftArrowRightArrow": "Right and left arrow keys",
+        "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
+        "moveFocusByOneMonth": "Switch months.",
+        "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
+        "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
+        "openThisPanel": "Open this panel.",
+        "pageUpPageDown": "page up and page down keys",
+        "questionMark": "Question mark",
+        "returnFocusToInput": "Return to the date input field.",
+        "selectFocusedDate": "Select the date in focus.",
+        "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+        "upArrowDownArrow": "up and down arrow keys",
       }
-      placeholder="Date"
-      readOnly={false}
-      renderCalendarInfo={null}
-      renderDayContents={null}
-      renderMonth={null}
-      reopenPickerOnClearDate={false}
-      required={false}
-      screenReaderInputMessage=""
-      showClearDate={false}
-      showDefaultInputIcon={false}
-      small={false}
-      verticalHeight={null}
-      verticalSpacing={22}
-      weekDayFormat="dd"
-      withFullScreenPortal={false}
-      withPortal={false}
-    />
-    <textarea
-      className="textarea"
-      cols="30"
-      onChange={[Function]}
-      placeholder="Add a note for your Expense! (optional)"
-      rows="10"
-      value="New Note"
-    />
+    }
+    placeholder="Date"
+    readOnly={false}
+    renderCalendarInfo={null}
+    renderDayContents={null}
+    renderMonth={null}
+    reopenPickerOnClearDate={false}
+    required={false}
+    screenReaderInputMessage=""
+    showClearDate={false}
+    showDefaultInputIcon={false}
+    small={false}
+    verticalHeight={null}
+    verticalSpacing={22}
+    weekDayFormat="dd"
+    withFullScreenPortal={false}
+    withPortal={false}
+  />
+  <label>
+    Expense Note
+  </label>
+  <textarea
+    className="textarea"
+    cols="30"
+    onChange={[Function]}
+    placeholder="Add a note for your Expense! (optional)"
+    rows="10"
+    value="New Note"
+  />
+  <div>
     <button
       className="button"
     >
       Add Expense
     </button>
-  </form>
-</div>
+  </div>
+</form>
 `;

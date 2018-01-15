@@ -10,3 +10,16 @@
     padding: $s-Size;
     text-decoration: none;
 }
+
+.button__secondary {
+    background: $dark-pink;
+    color: white;
+    display: inline-block;
+    border: none;
+    border-radius: 8px;
+    font-size: $font-size-large;
+    font-weight: 300;
+    line-height: 1;
+    padding: $s-Size;
+    text-decoration: none;
+}
