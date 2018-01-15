@@ -6,6 +6,10 @@
     height: 100vh;
     justify-content: center;
     width: 100vw;
+
+    @media (max-width: $desktop-breakpoint) {
+        background: url('/images/coins.jpeg') no-repeat center center fixed;
+    }
 }
 
 .box-layout__box {
