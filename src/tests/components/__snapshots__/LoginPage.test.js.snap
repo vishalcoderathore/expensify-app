@@ -7,7 +7,9 @@ exports[`should render login page correctly 1`] = `
   <div
     className="box-layout__box"
   >
-    <h1>
+    <h1
+      className="box-layout__title"
+    >
       Expensify
     </h1>
     <p>
