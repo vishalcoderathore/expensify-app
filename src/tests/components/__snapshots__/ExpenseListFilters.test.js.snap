@@ -43,11 +43,14 @@ exports[`should render expense list filters correctly 1`] = `
     >
       <withStyles(DateRangePicker)
         anchorDirection="left"
+        appendToBody={false}
         block={false}
+        calendarInfoPosition="bottom"
         customArrowIcon={null}
         customCloseIcon={null}
         customInputIcon={null}
         daySize={39}
+        disableScroll={false}
         disabled={false}
         displayFormat={[Function]}
         enableOutsideDays={false}
@@ -64,6 +67,7 @@ exports[`should render expense list filters correctly 1`] = `
         isDayHighlighted={[Function]}
         isOutsideRange={[Function]}
         isRTL={false}
+        keepFocusOnInput={false}
         keepOpenOnDateSelect={false}
         minimumNights={1}
         monthFormat="MMMM YYYY"
@@ -85,6 +89,7 @@ exports[`should render expense list filters correctly 1`] = `
             "chooseAvailableStartDate": [Function],
             "clearDates": "Clear Dates",
             "closeDatePicker": "Close",
+            "dateIsSelected": [Function],
             "dateIsUnavailable": [Function],
             "enterKey": "Enter key",
             "escape": "Escape key",
@@ -111,6 +116,7 @@ exports[`should render expense list filters correctly 1`] = `
           }
         }
         readOnly={false}
+        regular={false}
         renderCalendarInfo={null}
         renderDayContents={null}
         renderMonth={null}
@@ -177,11 +183,14 @@ exports[`should render expense list filters with alt data correctly 1`] = `
     >
       <withStyles(DateRangePicker)
         anchorDirection="left"
+        appendToBody={false}
         block={false}
+        calendarInfoPosition="bottom"
         customArrowIcon={null}
         customCloseIcon={null}
         customInputIcon={null}
         daySize={39}
+        disableScroll={false}
         disabled={false}
         displayFormat={[Function]}
         enableOutsideDays={false}
@@ -198,6 +207,7 @@ exports[`should render expense list filters with alt data correctly 1`] = `
         isDayHighlighted={[Function]}
         isOutsideRange={[Function]}
         isRTL={false}
+        keepFocusOnInput={false}
         keepOpenOnDateSelect={false}
         minimumNights={1}
         monthFormat="MMMM YYYY"
@@ -219,6 +229,7 @@ exports[`should render expense list filters with alt data correctly 1`] = `
             "chooseAvailableStartDate": [Function],
             "clearDates": "Clear Dates",
             "closeDatePicker": "Close",
+            "dateIsSelected": [Function],
             "dateIsUnavailable": [Function],
             "enterKey": "Enter key",
             "escape": "Escape key",
@@ -245,6 +256,7 @@ exports[`should render expense list filters with alt data correctly 1`] = `
           }
         }
         readOnly={false}
+        regular={false}
         renderCalendarInfo={null}
         renderDayContents={null}
         renderMonth={null}
